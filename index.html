@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form id=paiement>
+        <fieldset class= "blue">
+        <legend><span class="blue">Votre identité</span></legend>
+        <ol>
+            <li>
+              <label for=nom>Nom</label>
+              <input id=nom name=nom type=text placeholder="mon nom" required autofocus>
+            </li>
+
+            <li>
+                <label for=prenom>Téléphone</label>
+                <input id=prenom name=prenom type=pren placeholder="mon prénom" required>
+            </li>
+            <li>
+                <label for=email>Email</label>
+                <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+              </li>
+        </ol>
+        </fieldset>
+      
+        <fieldset class="purple">
+          <legend class="purple">Adresse de livraison</legend>
+            <ol>
+              <li>
+                <label for=adresse>Adresse</label>
+                <textarea id=adresse name=adresse rows=5 required></textarea>
+              </li>
+              <li>
+                <label for=codepostal>Code postal</label>
+                <input id=codepostal name=codepostal type=text required>
+              </li>
+                <li>
+                <label for=ville>Ville</label>
+                <input id=ville name=ville type=text required>
+              </li>
+            </ol>
+          </fieldset>
+        <fieldset class="pink">
+          <legend class="pink">Informations de réglement</legend>
+          <ol>
+            <li>
+                <legend>Type de carte bancaire</legend>
+                <ol>
+                  <li>
+                    <input id=visa name=type_de_carte type=radio>
+                    <label for=visa>VISA</label>
+                  </li>
+                  <li>
+                    <input id=mastercard name=type_de_carte type=radio>
+                    <label for=mastercard>Mastercard</label>
+                  </li>
+                </ol>
+            </li>
+            <li>
+              <label for=numero_de_carte>Numéro de carte</label>
+              <input id=numero_de_carte name=numero_de_carte required>
+            </li>
+            <li>
+              <label for=securite>Code sécurité</label>
+              <input id=securite name=securite required>
+            </li>
+            <li>
+              <label for=nom_porteur>Nom du titulaire</label>
+              <input id=nom_porteur name=nom_porteur type=text placeholder="Même nom que sur la carte" required>
+            </li>
+          </ol>
+        </fieldset>
+      
+          <button type=submit>J'achète !</button>
+    </form>
+</body>
